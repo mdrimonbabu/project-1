@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.clearFix::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+img{
+    max-width: 100%;
+}
+/* Header Section */
+/* //////////////////////////// */
+.header{
+    background: #22c3a3;
+    padding: 10px 0;
+    overflow: hidden;
+}
+.header .logo{
+    width: 30%;
+    float: left;
+}
+.header .logo a{
+    text-decoration: none;
+}
+.header .logo a h2{
+    color: aliceblue;
+    line-height: 60px;
+    margin-left: 30px;
+   
+}
+
+/* menu */
+
+.menu{
+    width: 70%;
+    float: right;
+
+}
+.menu div{
+    text-align: right;
+
+}
+.menu ul{
+    list-style-type: none;
+    margin-right: 30px;
+    cursor: pointer;
+}
+.menu ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: aliceblue;
+
+    line-height: 60px;
+    transition: .5s;
+    position: relative;
+}
+.menu ul li a::after{
+    content: "";
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background: aliceblue;
+    transition: .5s;
+    opacity: 0;
+}
+.menu ul li:hover a::after{
+    content: "";
+    height: 2px;
+    width: 102%;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    background: aliceblue;
+    opacity: 1;
+}
+
+/* Hero */
+/* ///////////////////////////////////////// */
+.hero{
+    height: 600px;
+    width: 100%;
+    background-image: url(https://i.ibb.co/PhjByL3/header-bg01.jpg);
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+}
+.hero h1{
+    padding-top: 260px;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 40px;
+}
+.hero h6{
+    color: aliceblue;
+    padding: 10px;
+    font-size: 20px;
+}
+.hero button{
+    background: transparent;
+    border: 1px solid aliceblue;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: .5s;
+    border-radius:3px;
+}
+.hero button:hover{
+    background: aliceblue;
+    border: 1px solid aliceblue;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+.hero button:hover a{
+    color: #22c3a3;
+}
+.hero button a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 300px;
+}
+/* Service */
+/* ///////////////////////////////////////// */
+.service{
+    width:100%;
+    height: auto;
+    text-align: center;
+    padding: 100px 0;
+    border-bottom: 2px solid #22c3a3;
+    overflow: hidden;
+}
+.service .content-name{
+    text-align: center;
+    padding: 50px;
+    color: gray;
+}
+.service .content-name h1{
+    color: rgb(100, 100, 100);
+    padding: 20px 0;
+}
+.service .content-item{
+    text-align: center;
+    color: gray;
+    width: 100%;
+    height: 100px;
+    margin-left: 10%;
+    cursor: pointer;
+}
+.service .content-item .item{
+    float: left;
+    width: 20%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+.service .content-item .item span{
+    color: #22c3a3;
+    font-size: 35px;
+    padding: 10px 0;
+    display: inline-block;
+}
+.service .content-item .item h3{
+    color: rgb(100, 100, 100);
+    font-family: sans-serif;
+    padding: 10px 0;
+}
+
+/* About */
+/* /////////////////////////////////////////// */
+.about{
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    overflow: hidden;
+}
+.about .about-name{
+    color: gray;
+    padding: 40px 0;
+}
+.about .about-name h2{
+    color: rgb(100, 100, 100);
+    font-size: 30px;
+    padding: 20px 0;
+}
+.about .about-content{}
+.about .about-content .image-div{
+    width: 40%;
+    float: left;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.about .about-content .about-div{
+    width: 60%;
+    float: left;
+    text-align: left;
+    padding: 30px 0;
+    color: gray;
+}
+.about .about-content .about-div .about-item{
+    padding-bottom: 30px;
+}
+.about .about-content .about-div .about-item h3{
+    color: rgb(100, 100, 100);
+    padding-bottom: 10px;
+}
+/* Contact */
+/* //////////////////////////////////////////////// */
+.contact{
+    padding: 100px 0;
+    height: auto;
+    width: 100%;
+    color: grey;
+    background-color: #f6f6f6;
+}
+.contact .contact-name{
+    text-align: center;
+
+}
+.contact .contact-name h3{
+    color: rgb(100, 100, 100);
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+.contact .contact-item{
+    text-align: center;
+    padding: 50px 0;
+    margin-left: 5%;
+    
+}
+.contact .contact-item .item{
+    float: left;
+    width: 30%;
+}
+.contact .contact-item .item span{
+    color: #22c3a3;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.contact .contact-item .item li{
+    list-style: none;
+    cursor: pointer;
+}
+
+/* Footer */
+/* /////////////////////////////////////////// */
+.foot1{
+    width: 100%;
+    height: 100%;
+    background-color: #22c3a3;
+    text-align: center;
+    padding: 20px 0;
+}
+.foot1 ul li{
+    color: aliceblue;
+    display: inline-block;
+    padding: 10px 10px;
+    transition: .4s;
+}
+.foot1 ul li:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.foot2{
+    background-color:#232323 ;
+    text-align: center;
+    color: aliceblue;
+    padding: 20px 0;
+    display: block;
+}
